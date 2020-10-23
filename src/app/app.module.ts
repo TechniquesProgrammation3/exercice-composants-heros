@@ -10,6 +10,9 @@ import { RechercheComponent } from './recherche/recherche.component';
 import { CarouselComponent } from './carousel/carousel.component';
 import { HeroComponent } from './hero/hero.component';
 import { PiedPageComponent } from './pied-page/pied-page.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
+import { MatCardModule } from '@angular/material/card';
 
 @NgModule({
   declarations: [
@@ -24,7 +27,9 @@ import { PiedPageComponent } from './pied-page/pied-page.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    MatCardModule
   ],
   providers: [],
   bootstrap: [AppComponent]
